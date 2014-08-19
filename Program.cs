@@ -39,7 +39,7 @@ namespace Calculator
                 {
                     do
                     {
-                        Console.WriteLine("Вы ввели неправильное действие!");
+                        Console.WriteLine("Вы ввели неправильное действие! (доступные действия: +, -, *, /)");
                         Console.WriteLine("Введите действие ещё раз и нажмите Enter");
                         c = Console.ReadLine();
                     } while (c != "+" && c != "-" && c != "*" && c != "/");
