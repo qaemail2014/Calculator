@@ -4,3 +4,9 @@ D:\Trainings\NET\Calculator\Calculator\bin\Debug\Calculator.pdb
 D:\Trainings\NET\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
 D:\Trainings\NET\Calculator\Calculator\obj\Debug\Calculator.exe
 D:\Trainings\NET\Calculator\Calculator\obj\Debug\Calculator.pdb
+d:\Trainings\Test\Calculator\bin\Debug\Calculator.exe.config
+d:\Trainings\Test\Calculator\obj\Debug\Calculator.exe
+d:\Trainings\Test\Calculator\obj\Debug\Calculator.pdb
+D:\Trainings\Test\Calculator\bin\Debug\Calculator.exe
+D:\Trainings\Test\Calculator\bin\Debug\Calculator.pdb
+D:\Trainings\Test\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache

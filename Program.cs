@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Написать простейший калькулятор (реализовать как минимум 4 операции: сложение, вычитание, умножение, деление) с вводом\выводом из консоли;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +21,7 @@ namespace Calculator
             double bConv = 0;
             double res = 0;
             Console.WriteLine("Вас приветствует калькулятор с четырмя основными действиями!");
+            //Ввод первого числа
             for (int i = 0; i == n; i++)
             {
                 try
@@ -33,6 +36,7 @@ namespace Calculator
                     n++;
                 }
             }
+            //Ввод действия
                 Console.WriteLine("Введите действие и нажмите Enter (доступные действия: +, -, *, /)");
                 c = Console.ReadLine();
                 if (c != "+" && c != "-" && c != "*" && c != "/")
@@ -44,6 +48,7 @@ namespace Calculator
                         c = Console.ReadLine();
                     } while (c != "+" && c != "-" && c != "*" && c != "/");
                 }
+            //Ввод второго числа
                 for (int j = 0; j == m; j++)
                 {
                     try
@@ -58,6 +63,7 @@ namespace Calculator
                         m++;
                     }
                 }
+            //Вычисление результата
                 Console.Write(a + c + b + "= ");
                 if (c == "+")
                 {
@@ -75,6 +81,7 @@ namespace Calculator
                 {
                     res = aConv / bConv;
                 }
+            //Вывод результата
                 Console.WriteLine(res);
                 Console.ReadLine();
         }
