@@ -30,7 +30,7 @@ namespace Calculator
                     a = Console.ReadLine();
                     aConv = Convert.ToDouble(a);
                 }
-                catch (FormatException e)
+                catch (Exception)
                 {
                     Console.WriteLine("Введенные данные не являются числом!");
                     n++;
@@ -57,7 +57,7 @@ namespace Calculator
                         b = Console.ReadLine();
                         bConv = Convert.ToDouble(b);
                     }
-                    catch (FormatException e)
+                    catch (Exception)
                     {
                         Console.WriteLine("Введенные данные не являются числом!");
                         m++;
@@ -65,22 +65,13 @@ namespace Calculator
                 }
             //Вычисление результата
                 Console.Write(a + c + b + "= ");
-                if (c == "+")
-                {
-                    res = aConv + bConv;
-                }
-                if (c == "-")
-                {
-                    res = aConv - bConv;
-                }
-                if (c == "*")
-                {
-                    res = aConv * bConv;
-                }
-                if (c == "/")
-                {
-                    res = aConv / bConv;
-                }
+            switch (c)
+            {
+                case "+": res = aConv + bConv; break;
+                case "-": res = aConv - bConv; break;
+                case "*": res = aConv * bConv; break;
+                case "/": res = aConv / bConv; break;
+            }
             //Вывод результата
                 Console.WriteLine(res);
                 Console.WriteLine("Спасибо, что воспользовались нашей программой!");
