@@ -83,6 +83,8 @@ namespace Calculator
                 }
             //Вывод результата
                 Console.WriteLine(res);
+                Console.WriteLine("Спасибо, что воспользовались нашей программой!");
+                Console.WriteLine("Нажмите Enter для выхода...");
                 Console.ReadLine();
         }
     }
